@@ -4,7 +4,7 @@ from django.db import models
 class Message(models.Model):
     user = models.CharField('姓名', max_length=50)
     subject = models.CharField('主旨', max_length=200)
-    context = models.TextField('內容')
+    content = models.TextField('內容')
     created = models.DateTimeField('留言時間', auto_now=True)
 
     def __str__(self):
